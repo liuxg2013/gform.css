@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* 全局字体 */
+/* 背景顏色 */
+/* 全局基础字体大小 */
+/* 情景颜色 */
+/* 情景颜色渐变 */
+/* 文本颜色 */
+/* 输入框颜色 */
+/* 盒子颜色 */
+/* table颜色相关 */
+/* 将px转换成 rem*/
+.ginput, textarea[class=ginput] {
+  border: 1px solid #D1D1D1;
+  height: 1.75rem;
+  width: 10rem;
+  padding: 0.25rem;
+  vertical-align: middle; }
+
+label {
+  font-size: 0.875rem;
+  cursor: inherit; }
+
+textarea[class=ginput] {
+  vertical-align: bottom;
+  height: 6.25rem;
+  width: 12.5rem; }
+
+.ginput:focus, textarea[class=ginput]:focus {
+  border: 1px solid #4D89C1;
+  box-shadow: inset 0 0 1px #C4C4C4;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
+
+.ginput-group, .gcheckbox-group, .gradio-group {
+  display: inline-block; }
+
+.ginput-group.icon, .icon.gcheckbox-group, .icon.gradio-group {
+  position: relative;
+  border: none; }
+
+.ginput-group.icon > i, .icon.gcheckbox-group > i, .icon.gradio-group > i {
+  color: #808080;
+  font-size: 0.875rem;
+  position: absolute;
+  top: 0.4375rem;
+  right: 0.3125rem;
+  transition: color 0.15s ease-in-out 0s; }
+
+.ginput-group.icon > .ginput, .icon.gcheckbox-group > .ginput, .icon.gradio-group > .ginput, .ginput-group.icon > textarea[class=ginput], .icon.gcheckbox-group > textarea[class=ginput], .icon.gradio-group > textarea[class=ginput] {
+  padding: 0.25rem 1.3125rem 0.25rem 0.25rem; }
+
+.ginput-group.icon.icon-left > .ginput, .icon.icon-left.gcheckbox-group > .ginput, .icon.icon-left.gradio-group > .ginput, .ginput-group.icon.icon-left > textarea[class=ginput], .icon.icon-left.gcheckbox-group > textarea[class=ginput], .icon.icon-left.gradio-group > textarea[class=ginput] {
+  padding: 0.25rem 0.25rem 0.25rem 1.3125rem; }
+
+.ginput-group.icon.icon-left > i, .icon.icon-left.gcheckbox-group > i, .icon.icon-left.gradio-group > i {
+  right: auto;
+  left: 0.3125rem; }
+
+.ginput-group.icon > .ginput:focus + i, .icon.gcheckbox-group > .ginput:focus + i, .icon.gradio-group > .ginput:focus + i, .ginput-group.icon > textarea[class=ginput]:focus + i, .icon.gcheckbox-group > textarea[class=ginput]:focus + i, .icon.gradio-group > textarea[class=ginput]:focus + i {
+  color: #4D89C1; }
+
+.gcheckbox-group {
+  cursor: pointer; }
+
+.gcheckbox-group > .gcheckbox {
+  display: inline-block;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  position: relative;
+  top: 0.125rem;
+  border: 1px solid #D1D1D1;
+  transition: all 0.15s ease-in-out; }
+
+.gcheckbox-group > .gcheckbox.check {
+  border: 1px solid #4D89C1;
+  position: relative; }
+
+.gcheckbox-group > .gcheckbox.check:before {
+  content: "";
+  width: 0.3125rem;
+  height: 0.3125rem;
+  left: 0.1875rem;
+  top: 0.1875rem;
+  display: block;
+  position: absolute;
+  background-color: #4D89C1; }
+
+.gradio-group {
+  cursor: pointer; }
+
+.gradio-group > .gradio {
+  display: inline-block;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  position: relative;
+  top: 0.125rem;
+  border: 1px solid #D1D1D1;
+  transition: all 0.15s ease-in-out;
+  border-radius: 0.8125rem; }
+
+.gradio-group > .gradio.check {
+  border: 1px solid #4D89C1;
+  position: relative; }
+
+.gradio-group > .gradio.check:before {
+  content: "";
+  width: 0.3125rem;
+  height: 0.3125rem;
+  left: 0.1875rem;
+  top: 0.1875rem;
+  display: block;
+  position: absolute;
+  background-color: #4D89C1;
+  border-radius: 0.3125rem; }
+
+.gswitch {
+  display: inline-block;
+  height: 1.625rem;
+  width: 3.125rem;
+  border-radius: 1.5625rem;
+  background-color: #4D89C1;
+  position: relative; }
+
+.gswitch .handle {
+  background-color: #fff;
+  color: #444444;
+  display: inline-block;
+  height: 1.375rem;
+  width: 1.375rem;
+  border-radius: 1.4375rem;
+  text-align: center;
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  cursor: pointer; }
+
+.gswitch .handle > span {
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  position: absolute;
+  left: 1.625rem;
+  color: #fff;
+  top: -1px; }
+
+.gswitch .handle.on {
+  left: 1.625rem; }
+
+.gswitch .handle.on > span {
+  left: -1rem; }
+
+.gdropdown {
+  display: inline-block;
+  position: relative; }
+
+.gdropdown.caret {
+  position: relative; }
+
+.gdropdown.caret:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 0.3125rem solid transparent;
+  right: 0.5rem;
+  top: 0.6875rem;
+  border-top-color: #808080; }
+
+.gdropdown > input:focus {
+  border: 1px solid #D1D1D1;
+  box-shadow: none; }
+
+.gdropdown > .gcontent {
+  border: 1px solid #D1D1D1;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1), 0 0 16rem rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 1.8125rem;
+  left: 0;
+  height: 8.75rem;
+  width: 10rem; }
+
+.gdropdown > .gcontent {
+  overflow: auto; }
+
+.gdropdown > .gcontent > ul > li {
+  font-size: 0.8125rem;
+  padding: 0.3125rem 0.625rem;
+  vertical-align: top;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out; }
+
+.gdropdown > .gcontent > ul > li:hover {
+  background-color: #E7E7E7; }
+
+.gdropdown > .gcontent > ul > li > i {
+  margin-right: 0.5rem;
+  color: #808080; }
+
+/*# sourceMappingURL=gform.css.map */

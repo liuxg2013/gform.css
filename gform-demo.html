@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "UTF-8"/>
+<!-- 手机的媒体查询只有加上这个才会响应 -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- 告诉IE浏览器以该浏览器的最高版本渲染本页面 -->
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="gform.css" />
+<link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+
+.gtitlebar {
+	width: 95%;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+	font-family: 微软雅黑;
+	color : #6FA2EE;
+	margin : 10px 0px;
+}
+
+.gtitlebar  span.title {
+	background-color: #fff;
+	line-height: 30px;
+	padding: 4px;
+	border-bottom: 2px solid #6FA2EE;
+}
+
+.left {
+	border-left: 2px solid #6FA2EE;
+	border-bottom: none;
+	height: 20px;
+}
+
+.left span.title {
+	border-bottom: none;
+	padding: 3px 6px;
+	line-height: 20px;
+}
+
+</style>
+<title>表单样式</title>
+
+<body class = "gmargin-10">
+
+<div class="gtitlebar left">
+	<span class="title">input</span>
+</div>
+
+<div class = "ginput-group label animated flipInY">
+    <label>输入框：</label><input class = "ginput" type = "text" />
+</div>
+
+<div class="gtitlebar left">
+	<span class="title">带有图标的表单,默认图在右</span>
+</div>
+
+<div class = "ginput-group label animated flipInY">
+	 <label>图标在左：</label>
+	 <div class = "ginput-group icon icon-left">
+	    <input type = "text" class = "ginput"/>
+	    <i class = "fa fa-user"></i>
+	 </div>
+</div>
+
+<div class = "ginput-group label animated flipInY">
+	 <label>图标在右：</label>
+	 <div class = "ginput-group icon">
+	    <input type = "text" class = "ginput"/>
+	    <i class = "fa fa-search"></i>
+	 </div>
+</div>
+
+<div class="gtitlebar left">
+	<span class="title">textarea</span>
+</div>
+
+<div class = "ginput-group label animated flipInY">
+    <label>textarea：</label><textarea class = "ginput" ></textarea>
+</div>
+
+<div class="gtitlebar left">
+	<span class="title">checkbox</span>
+</div>
+
+<div class = "gcheckbox-group animated flipInY">
+   <label>水果</label>
+   <span class = "gcheckbox"></span>
+</div>
+
+<div class = "gcheckbox-group animated flipInY">
+   <label>蔬菜</label>
+   <span class = "gcheckbox check"></span>
+</div>
+
+<div class="gtitlebar left">
+	<span class="title">radio</span>
+</div>
+
+<div class = "gradio-group animated flipInY">
+   <label>鸡翅</label>
+   <span class = "gradio"></span>
+</div>
+
+<div class = "gradio-group animated flipInY">
+   <label>腊肉</label>
+   <span class = "gradio check"></span>
+</div>
+
+<div class="gtitlebar left">
+  <span class="title">switch</span>
+</div>
+
+<div class = "gswitch success-bg-color animated flipInY">
+  <span class = "handle on">
+    <span >开</span>
+  </span>
+</div>
+
+<div class = "gswitch animated flipInY">
+  <span class = "handle">
+    <span>关</span>
+  </span>
+</div>
+
+<div class="gtitlebar left">
+	<span class="title">select</span>
+</div>
+
+<div class = "gdropdown caret">
+    <input type = "text" class = "ginput" />
+    <div class = "gcontent ganimated fade-top-in">
+       <ul>
+          <li><i class = "fa fa-check-circle"></i>我爸是李刚</li>
+          <li>我爸是李刚</li>
+          <li>我爸是李刚</li>
+          <li class = "gline"></li>
+          <li>我爸是李刚</li>
+          <li>我爸是李刚</li>
+       </ul>
+    </div> 
+</div>
+
+<script type="text/javascript" data-main = "test.js" src = "../../lib/require/require2.1.11.js"></script>
+
+</body>
+                          
+</html>
